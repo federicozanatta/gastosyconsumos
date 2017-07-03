@@ -1,0 +1,111 @@
+<div class="revision" layout-padding>
+	<link rel="stylesheet" type="text/css" href="./dist/routes/revision/revision.css" >
+	<div>
+		<section layout="column">
+		
+			<div class="style-font">
+				<span>Confirmación</span>
+			</div>
+			
+			<form name="userForm">
+				<div class="style-input-div"  >
+				<div ng-repeat="circulante in revision.users.circulante">
+					<div class="style-input-left">				
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">person_pin</i></md-icon>
+						<input ng-model="circulante.nombre" type="text" readonly placeholder="Circulante" autocomplete="off">
+						</md-input-container>	
+					</div>		
+					<div class="style-input-right" ng-controller="revisionCtrl">
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">fingerprint</i></md-icon>
+						<input ng-model="password" type="password" placeholder="Contraseña" autocomplete="off">
+						<md-button class="button-form" ng-click="myFunc1()"><md-icon><i class="style-input material-icons">chevron_right</i></md-icon></md-button>		
+						<i class="style-check material-icons" ng-show="showMe1">check_circle</i>
+						</md-input-container>
+						
+					</div>
+
+				</div>
+				<div>
+					<div class="style-input-left">	
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">person_pin</i></md-icon>
+						<input ng-model="circulante.nombre" type="text" readonly placeholder="Circulante" autocomplete="off">
+						</md-input-container>		
+						<br>
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">person_pin</i></md-icon>
+						<input ng-model="pre_ingreso.user.caja" type="text" readonly placeholder="Instrumentista" autocomplete="off">
+						</md-input-container>
+						<br>
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">person_pin</i></md-icon>
+						<input ng-model="pre_ingreso.user.caja" type="text" readonly placeholder="Cirujano" autocomplete="off">
+						</md-input-container>
+						<br>				
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">person_pin</i></md-icon>
+						<input ng-model="pre_ingreso.user.caja" type="text" readonly placeholder="Anestesista" autocomplete="off">
+						</md-input-container>
+						<br>				
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">person_pin</i></md-icon>
+						<input ng-model="pre_ingreso.user.caja" type="text" readonly placeholder="Ayudante" autocomplete="off">
+						</md-input-container>
+					</div>
+					<div class="style-input-right" ng-controller="revisionCtrl">	
+						<md-input-container >
+						<md-icon ><i class="style-input material-icons">fingerprint</i></md-icon>
+						<input ng-model="password" type="password" placeholder="Contraseña" autocomplete="off">
+						<md-button class="button-form" ng-click="myFunc2()"><md-icon><i class="style-input material-icons">chevron_right</i></md-icon></md-button>
+						<i class="style-check material-icons" ng-show="showMe2">check_circle</i>
+						</md-input-container>
+						<br>	
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">fingerprint</i></md-icon>
+						<input ng-model="pre_ingreso.user.cotra1" type="password" placeholder="Contraseña" autocomplete="off">
+						<md-button class="button-form" ng-click="myFunc3()"><md-icon><i class="style-input material-icons">chevron_right</i></md-icon>
+						</md-button>		
+						<i class="style-check material-icons" ng-show="showMe3">check_circle</i>							
+						</md-input-container>	
+						
+						<br>			
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">fingerprint</i></md-icon>
+						<input ng-model="pre_ingreso.user.cotra12" type="password" placeholder="Contraseña" autocomplete="off">
+						<md-button class="button-form" ng-click="myFunc4()"><md-icon><i class="style-input material-icons">chevron_right</i></md-icon></md-button>
+						<i class="style-check material-icons" ng-show="showMe4">check_circle</i>
+						</md-input-container>
+						
+						<br>			
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">fingerprint</i></md-icon>
+						<input ng-model="pre_ingreso.user.cotra13" type="password" placeholder="Contraseña" autocomplete="off">
+						<md-button class="button-form" ng-click="myFunc5()"><md-icon><i class="style-input material-icons">chevron_right</i></md-icon></md-button>
+						<i class="style-check material-icons" ng-show="showMe5">check_circle</i>
+						</md-input-container>
+						
+						<br>			
+						<md-input-container>
+						<md-icon ><i class="style-input material-icons">fingerprint</i></md-icon>
+						<input ng-model="pre_ingreso.user.cotra14" type="password" placeholder="Contraseña" autocomplete="off">
+						<md-button class="button-form"><md-icon><i class="style-input material-icons">chevron_right</i></md-icon></md-button>
+						<i class="style-check material-icons" ng-show="showMe8">check_circle</i>
+						</md-input-container>	
+											
+					</div>
+				</div>
+				</div>
+			</form>
+			
+			<div class="style-div">
+				<sm-input-container class="md-block" flex-md>
+				<br>
+				<md-button class="md-raised md-primary send-button style-button-volver" ng-click="revision.volverConteo()"><h1> Volver </h1></md-button>
+				<md-button class="md-raised md-primary send-button" ng-click="revision.send()"><h1> Finalizar </h1></md-button>
+				</sm-input-container>
+			</div>
+		</section>
+	</div>
+</div>

@@ -1,0 +1,72 @@
+<div class="intervencion" layout-padding>
+	<link rel="stylesheet" type="text/css" href="./dist/routes/intervencion/intervencion.css" >
+	<div>
+		<section layout="column">
+			<div class="style-font">
+				<span>Intervención</span>
+			</div>
+		
+			<form name="userForm">
+				<div class="style-input-div" ng-controller="intervencionCtrl" >
+					<div class="style-input-left">
+						<md-input-container>
+						<md-icon ><i class="material-icons">person_pin</i></md-icon>
+						<input ng-model="we3" type="text" placeholder="Cirujano DNI" autocomplete="off">
+						<md-button class="button-form" ng-click="AddItemCirujano()"><md-icon><i class="material-icons">person_add</i></md-icon></md-button>
+						</md-input-container>					
+						<p class="style-font-text-persona" ng-repeat="item in itemsCirujano">{{item}}<a href="" ng-click="RemoveItemCirujano(item)"><md-icon ><i class="material-icons">delete_forever</i></md-icon></a></p>
+						<br>
+						<md-input-container>
+						<md-icon ><i class="material-icons">person_pin</i></md-icon>
+						<input ng-model="we4" type="text" placeholder="Anestesista DNI" autocomplete="off">
+						<md-button class="button-form" ng-click="AddItemAnestesista()"><md-icon><i class="material-icons">person_add</i></md-icon></md-button>
+						</md-input-container>
+						<p class="style-font-text-persona" ng-repeat="item in itemsAnestesista">{{item}}<a href="" ng-click="RemoveItemAnestesista(item)"><md-icon ><i class="material-icons">delete_forever</i></md-icon></a></p>
+						<br>
+						<md-input-container>
+						<md-icon><i class="material-icons">assignment</i></md-icon>
+						<textarea cols="22" ng-model="pre_ingreso.user.ciirujia"  type="text" placeholder="Cirugía">						
+						</textarea> 		
+						<md-button class="button-form-diagnostico"><md-icon><i class="material-icons">keyboard_voice</i></md-icon></md-button>			
+						</md-input-container>
+						
+						<br>
+						<md-input-container>
+						<md-icon><i class="material-icons">assignment</i></md-icon>
+						<textarea cols="22" ng-model="intervencion.user.diagnostico" type="text" placeholder="Observaciones">						
+						</textarea> 
+						<md-button class="button-form-diagnostico"><md-icon><i class="material-icons">keyboard_voice</i></md-icon></md-button>					
+						</md-input-container>
+						
+					</div>
+					<div class="style-input-right">
+						<md-input-container>
+						<md-icon ><i class="material-icons">person_pin</i></md-icon>
+						<input ng-model="we5" type="text" placeholder="Ayudante DNI" autocomplete="off">
+						<md-button class="button-form" ng-click="AddItemAyudante()"><md-icon><i class="material-icons">person_add</i></md-icon></md-button>
+						</md-input-container>	
+						<p class="style-font-text-persona" ng-repeat="item in itemsAyudante">{{item}}<a href="" ng-click="RemoveItemAyudante(item)"><md-icon ><i class="material-icons">delete_forever</i></md-icon></a></p>
+						<br>		
+						<md-input-container class="style-input-right-hour">
+						<md-icon ><i class="material-icons">watch</i></md-icon>
+						<input ng-model="intervencion.user.date.horaComienzo" ng-format="hh:mm" type="time" step="1" placeholder="Hora de Incisión">
+						</md-input-container>
+						<br>
+						<md-input-container class="style-input-right-hour">
+						<md-icon ><i class="material-icons">watch</i></md-icon>
+						<input ng-model="intervencion.user.date.horaFinal" ng-format="hh:mm" type="time" step="1" placeholder="Hora de Cierre">
+						</md-input-container>
+
+					</div>
+				</div>
+			</form>
+			<div class="style-div">
+				<sm-input-container class="md-block" flex-md>
+				<br>
+				<md-button class="md-raised md-primary send-button style-button-volver" ng-click="intervencion.volverPreingreso()"><h1> Volver </h1></md-button>
+				<md-button class="md-raised md-primary send-button" ng-click="intervencion.send()"><h1> Verificación </h1></md-button>		
+				</sm-input-container>
+			</div>
+		</section>
+	</div>
+</div>

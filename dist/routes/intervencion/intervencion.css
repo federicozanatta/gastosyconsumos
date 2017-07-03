@@ -1,0 +1,84 @@
+.intervencion .sidebar-bars {
+  top: -3px; }
+  .intervencion .sidebar-bars i {
+    color: white; }
+
+.intervencion .send-button {
+  width: 30%;
+  height: 30%;
+  margin: 2%;
+  margin-left: 12%; }
+
+.intervencion .style-input-left {
+  width: 37%;
+  margin-left: 15px;
+  float: left; }
+
+.intervencion .style-input-right {
+  width: 37%;
+  margin-right: 20px;
+  float: right; }
+
+.intervencion .style-input-right-hour {
+  width: 80%; }
+
+.intervencion .style-input-right-diag {
+  width: 100%; }
+
+.intervencion .style-input-div {
+  width: 95%; }
+
+.intervencion .style-font {
+  width: 55%;
+  font-family: 'MuseoSans-300';
+  font-size: 35px;
+  color: grey;
+  margin-left: 31.8%;
+  margin-top: 6px;
+  margin-bottom: 20px; }
+
+.intervencion .style-font-text-persona {
+  width: 100%;
+  font-family: 'MuseoSans-300';
+  font-size: 15px;
+  color: grey;
+  margin-left: 37px;
+  margin-top: 0px; }
+
+.intervencion .button-form {
+  position: absolute !important;
+  min-height: 30px !important;
+  min-width: 32px !important;
+  line-height: 31px !important;
+  padding: 0px 6px !important;
+  margin: 2px 5px !important; }
+
+.intervencion .button-form-diagnostico {
+  position: absolute !important;
+  min-height: 32px !important;
+  min-width: 30px !important;
+  line-height: 30px !important;
+  padding: 0px 6px !important;
+  margin: -30px 168px !important; }
+
+.intervencion .style-button-volver {
+  background: grey !important; }
+
+.intervencion .style-font-check {
+  width: 85%;
+  font-family: 'MuseoSans-300';
+  font-size: 20px;
+  color: grey;
+  margin-left: 20px;
+  margin-top: 0px; }
+
+.intervencion .style-font-text {
+  width: 100%;
+  font-family: 'MuseoSans-300';
+  font-size: 20px;
+  color: grey;
+  margin-left: 10px;
+  margin-top: 0px; }
+
+.intervencion .style-div {
+  padding-bottom: 25px; }

@@ -1,0 +1,25 @@
+.cirugia .sidebar-bars {
+  top: -3px; }
+  .cirugia .sidebar-bars i {
+    color: white; }
+
+.cirugia .send-button {
+  width: 40%;
+  height: 100px;
+  margin: 5%;
+  margin-left: 30%; }
+
+.cirugia .header-bars {
+  width: 70%;
+  font-family: 'MuseoSans-300';
+  font-size: 20px;
+  color: white;
+  margin-left: 14.7%; }
+
+.cirugia .style-font {
+  width: 85%;
+  font-family: 'MuseoSans-300';
+  font-size: 35px;
+  color: grey;
+  margin-left: 8.4%;
+  margin-top: 30px; }

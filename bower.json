@@ -1,0 +1,26 @@
+{
+  "name": "quirofano",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "fedemza6@gmail.com"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "angular-strap": "^2.3.10",
+    "angular-motion": "^0.4.4",
+    "angular-time-picker": "^1.1.0"
+  },
+  "devDependencies": {}
+}

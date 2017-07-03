@@ -1,0 +1,28 @@
+<div class="cirugia">
+	<link rel="stylesheet" type="text/css" href="./dist/routes/cirugia/cirugia.css" >
+	<md-toolbar>
+		<div class="header-bars md-toolbar-tools">
+			<h2>
+				<span>Notas de Informe Quirúrgico</span>
+			</h2>
+		</div>
+	</md-toolbar>
+	<div ui-view>
+		<section layout="column">
+			<md-content flex="1">
+				<div class="style-font">
+						<span>Seleccione el tipo de cirugía que desee</span>
+				</div>
+			</md-content>
+			<md-content flex="1" layout-padding>
+					<form name="userForm">	
+						<div layout-md="column">
+							<sm-input-container class="md-block" flex-md>
+								<md-button class="md-raised md-primary send-button" ng-click="cirugia.send()"><h1> Programado </h1></md-button>
+							</sm-input-container>
+						</div>
+					</form>
+			</md-content>		
+		</section>
+	</div>
+</div>

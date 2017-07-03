@@ -1,0 +1,39 @@
+[
+	{
+	"dni": 1234,
+	"nombre": "Default",
+	"apellido": "Default"
+	},
+	{
+	"dni": 33222333,
+	"nombre": "Marcela Gomez"
+	},
+	{
+	"dni": 33111222,
+	"nombre": "Pablo Gonzalez"
+	},
+	{
+	"dni": 33822163,
+	"nombre": "Federico Zanatta"
+	},
+	{
+	"dni": 33666777,
+	"nombre": "Emanuel Rodriguez",
+	"edad": "30",
+	"domicilio": "Libertad 892",
+	"diagnostico": "El paciente ingresa con síntomas de dolor en el cuadrante superior derecho, náusea, vómitos. Se le realiza una ecografía abdominal y se comprueba que hay cálculos en la vesícula biliar.",
+	"historia": "9153831",
+	"fechaIngreso": "12/03/2003",
+	"obraSocial": "Ospe"
+	},
+		{
+	"dni": 33888999,
+	"nombre": "Mariana Gomez",
+	"edad": "24",
+	"domicilio": "Chile 82",
+	"diagnostico": "La paciente ingresa con dificultad respiratoria, dolor en el pecho, tos, expectoración con sangre, fiebre, pérdida de peso. Se le realiza una tomografía computada de tórax y se comprueba la presencia de nódulos en el pulmón derecho.",
+	"historia": "4453730",
+	"fechaIngreso": "22/07/2006",
+	"obraSocial": "Swiss Medical"
+	}
+]

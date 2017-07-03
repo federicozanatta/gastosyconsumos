@@ -1,0 +1,10 @@
+.home .sidebar-bars {
+  top: -3px; }
+  .home .sidebar-bars i {
+    color: white; }
+
+.home .send-button {
+  width: 30%;
+  padding-left: 35%;
+  padding-right: 35%;
+  height: 100px; }

@@ -1,0 +1,16 @@
+.home{
+	.sidebar-bars{
+		top:-3px;
+		i{
+			color: white;	
+		}
+	}
+	.send-button{
+		width:30%;
+		padding-left: 35%;
+		padding-right: 35%;
+		height: 100px;
+		//margin:20%;
+	}
+	//@include responsive (tablet) {}
+}

@@ -1,0 +1,87 @@
+<div class="home" ng-cloak>
+	<link rel="stylesheet" type="text/css" href="./dist/routes/home/home.css" >
+	<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+		<md-toolbar class="md-theme-indigo">
+			<h1 class="md-toolbar-tools">Menu</h1>
+		</md-toolbar>
+		<md-content>
+			<md-list flex>
+				<md-list-item class="md-3-line" ng-click="null">
+					<div class="md-list-item-text" layout="column">
+						<span><md-icon ><i class="material-icons md-accent">local_hospital</i></md-icon> Hospital</span>
+					</div>					
+				</md-list-item>		
+				<md-divider ></md-divider>	
+								<md-list-item class="md-3-line" ng-click="null">
+					<div class="md-list-item-text" layout="column">
+						<span><md-icon ><i class="material-icons md-accent">local_hospital</i></md-icon> Hospital</span>
+					</div>					
+				</md-list-item>		
+				<md-divider ></md-divider>	
+								<md-list-item class="md-3-line" ng-click="null">
+					<div class="md-list-item-text" layout="column">
+						<span><md-icon ><i class="material-icons md-accent">local_hospital</i></md-icon> Hospital</span>
+					</div>					
+				</md-list-item>		
+				<md-divider ></md-divider>	
+			</md-list>
+		</md-content>
+	</md-sidenav>
+	<md-toolbar class="md-hue-2">
+		<div class="md-toolbar-tools">
+			<md-button class="md-icon-button md-primary sidebar-bars"  ng-click="home.toggleLeft()" aria-label="Settings">
+				<md-icon><i class="fa fa-bars" aria-hidden="true"></i></md-icon>
+			</md-button>
+			<h2>
+				<span>Quirófano</span>
+			</h2>
+			<span flex></span>
+			<md-button class="md-icon-button" aria-label="Favorite">
+				<md-icon ><i class="material-icons md-accent">local_hospital</i></md-icon>
+			</md-button>
+		</div>
+	</md-toolbar>
+	<div ui-view>
+		<section layout="column">
+			<md-content flex="1" layout-padding>
+			</md-content>
+			<md-content flex="2" layout-padding>
+				<div>
+					<form name="userForm">
+						<div layout-xs="column">
+							<md-input-container md-no-float class="md-block">
+								<md-icon ><i class="material-icons">person_pin</i></md-icon>
+								<input ng-model="home.user.name" type="text" placeholder="Nombre" autocomplete="off">
+							</md-input-container>
+						</div>
+						<div layout-xs="column">
+							<md-input-container md-no-float class="md-block">
+								<md-icon ><i class="material-icons">person_pin</i></md-icon>
+								<input ng-model="home.user.lastname" type="text" placeholder="Apellido" autocomplete="off">
+							</md-input-container>
+						</div>
+						<div layout-xs="column">
+							<md-input-container md-no-float class="md-block">
+								<md-icon ><i class="material-icons">call</i></md-icon>
+								<input ng-model="home.user.tel" type="text" placeholder="Tel&eacute;fono" autocomplete="off">
+							</md-input-container>
+						</div>
+						<div layout-xs="column">
+							<md-input-container md-no-float class="md-block">
+								<md-icon ><i class="material-icons">mail_outline</i></md-icon>
+								<input ng-model="home.user.mail" type="text" placeholder="E-Mail" autocomplete="off">
+							</md-input-container>
+						</div>
+						<div layout-xs="column">
+							<md-input-container class="md-block" flex-xs>
+								<md-button class="md-raised md-primary send-button" ng-click="home.send()"> Enviar1 </md-button>
+								<md-button class="md-raised md-primary send-button" ng-click="home.send()"> Enviar2 </md-button>
+								<md-button class="md-raised md-primary send-button" ng-click="home.send()"> Enviar3 </md-button>
+							</md-input-container>
+						</div>
+					</form>
+				</div>
+			</md-content>		
+		</section>
+	</div>
+</div>

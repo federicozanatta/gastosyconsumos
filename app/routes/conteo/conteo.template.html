@@ -1,0 +1,83 @@
+<div class="conteo" layout-padding>
+	<link rel="stylesheet" type="text/css" href="./dist/routes/conteo/conteo.css" >
+	<div>
+		<section layout="column">
+			<div class="style-font">
+				<span>Verificación del Material</span>
+			</div>
+			<form name="userForm">
+				<div class="style-input-div">
+					<div class="style-input-left">
+						<md-input-container>
+						<md-icon ><i class="material-icons">unarchive</i></md-icon>
+						<input ng-model="pre_ingreso.user.cajanombre" type="text" placeholder="Nombre de Caja" autocomplete="off">
+						</md-input-container>
+						<br>				
+						<md-input-container>
+						<md-icon ><i class="material-icons">unarchive</i></md-icon>
+						<input ng-model="pre_ingreso.user.tipopaquete" type="text" placeholder="Tipo de Paquete" autocomplete="off">				
+						</md-input-container>
+						<br>			
+						<md-input-container>
+						<md-icon ><i class="material-icons">unarchive</i></md-icon>
+						<input ng-model="pre_ingreso.user.muestradesc" type="text" placeholder="Muestra" autocomplete="off">
+						</md-input-container>
+						<br>
+						<md-input-container>
+						<md-icon><i class="material-icons">assignment</i></md-icon>
+						<textarea cols="22" ng-model="pre_ingreso.user.observaciones" type="text" placeholder="Observaciones">						
+						</textarea> 				
+						<md-button class="button-form-diagnostico"><md-icon><i class="material-icons">keyboard_voice</i></md-icon></md-button>	
+						</md-input-container>
+						
+					</div>
+					<div class="style-input-right">
+						<md-input-container>
+						<md-icon ><i class="material-icons">unarchive</i></md-icon>
+						<input ng-model="pre_ingreso.user.caja" type="text" placeholder="Caja N° Lote" autocomplete="off">
+						<md-button class="button-form"><md-icon><i class="material-icons">chevron_right</i></md-icon></md-button>
+						</md-input-container>	
+						<br>
+						<md-input-container>
+						<md-icon ><i class="material-icons">unarchive</i></md-icon>
+						<input ng-model="pre_ingreso.user.paquete" type="text" placeholder="Paquete N° Lote" autocomplete="off">
+						<md-button class="button-form"><md-icon><i class="material-icons">chevron_right</i></md-icon></md-button>
+						</md-input-container>	
+						<br>	
+						<md-input-container>
+						<md-icon ><i class="material-icons">unarchive</i></md-icon>
+						<input ng-model="pre_ingreso.user.muestra" type="text" placeholder="N° de Muestra" autocomplete="off">
+						<md-button class="button-form"><md-icon><i class="material-icons">chevron_right</i></md-icon></md-button>
+						</md-input-container>
+						<br>
+						<md-input-container class="style-input-right-hour">
+						<md-icon ><i class="material-icons">watch</i></md-icon>
+						<input ng-model="pre_ingreso.user.date.hora" ng-format="hh:mm" type="time" step="1" placeholder="Hora de Egreso">
+						</md-input-container>
+					</div>
+				</div>
+			</form>
+		
+			<div class="style-div">
+				<sm-input-container class="md-block" flex-md>
+				<div class="style-font-check">
+				<md-checkbox md-no-ink aria-label="Checkbox1" ng-model="data.cb5" class="md-primary">
+				<div class="style-font-text">
+  				Recuento de instrumentos y compresas utilizadas.
+				</div>
+				</md-checkbox>
+				<br>
+				<md-checkbox md-no-ink aria-label="Checkbox2" ng-model="data.cb15" class="md-primary">
+				<div class="style-font-text">
+  				Etiquetado de las muestras.	
+				</div>
+				</md-checkbox>
+				</div>
+				<br>
+				<md-button class="md-raised md-primary send-button style-button-volver" ng-click="conteo.volverIntervencion()"><h1> Volver </h1></md-button>
+				<md-button class="md-raised md-primary send-button" ng-click="conteo.send()"><h1> Confirmación </h1></md-button>
+				</sm-input-container>
+			</div>
+		</section>
+	</div>
+</div>
